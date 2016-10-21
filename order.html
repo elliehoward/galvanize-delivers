@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Order Galvanize</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+
+                <a class="navcolor2" href="./index.html">Galvanize Delivers</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <a class="navbar-right navcolor" id="order-page-selected" href="./order.html">Ordering Delivery</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid center-block orderStyle">
+        <div class="row">
+            <div class="col-md-6">
+                <header> Menu </header>
+
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img src="img/burger.jpg" alt="...">
+                            <div class="caption">
+                                <h3>Cheesy Royale</h3>
+                                <p id='burger-price'>$8.99</p>
+                                <p><a href="#" class="btn btn-primary mybutton" id='burger-add' role="button">Add to order</a> </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img src="img/pizza.jpg" alt="...">
+                            <div class="caption">
+                                <h3>Arugula Pie</h3>
+                                <p id='pizza-price'>$11.99</p>
+                                <p><a href="#" class="btn btn-primary mybutton" id='pizza-add' role="button">Add to order</a> </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img src="img/ribs.jpg" alt="...">
+                            <div class="caption">
+                                <h3>Smoked swine</h3>
+                                <p id='ribs-price'>$40.00</p>
+                                <p><a href="#" class="btn btn-primary mybutton" id='ribs-add' role="button">Add to order</a> </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img src="img/ice_cream.jpg" alt="...">
+                            <div class="caption">
+                                <h3>Creamy ice</h3>
+                                <p id='ice-cream-price'>$6.99</p>
+                                <p><a href="#" class="btn btn-primary mybutton" id='ice-cream-add' role="button">Add to order</a> </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <header> Order </header>
+                <div class="row">
+                    <table class="table table-hover" id="cart-table">
+                        <tr>
+                            <th>
+                                Item
+                            </th>
+                            <th>
+                                Price
+                            </th>
+                        </tr>
+
+                    </table>
+                    <div class="row">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4">Subtotal:</div>
+                        <div class="col-md-4" id='cart-total'></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4">Tax:</div>
+                        <div id="tax" class="col-md-4"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4">Total:</div>
+                        <div class="col-md-4" id='final-total'></div>
+                    </div>
+
+                    <label for="custo-name"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Name <br>
+                      <input type="text" name="custo-name">
+                    </label>
+                    <br>
+                    <label for="phone-number"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> Phone Number <br>
+                      <input type="tel" name="phone-number">
+                    </label>
+                    <br>
+                    <label for="phone-number"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span>Address <br>
+                      <textarea name="address" rows="2" cols="30"></textarea>
+                    </label>
+                    <br>
+
+                    <a href="./orderplaced.html"><button class="mybutton btn btn-primary btn-lg">PLACE ORDER</button></a>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="footer-style"> Galvanize Delivers </p>
+                        <p class="footer-style2"> Fine Dining, Delivered.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="./index.html" class="footer-style2"> Home </a> <br>
+                        <a href="./order.html" class="footer-style2"> Order Delivery </a>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+        <footer class="footer2">
+            ©2016 Galvanize Delivers
+        </footer>
+
+        <script type="text/javascript" src="main.js">
+        </script>
+</body>
+
+</html>
